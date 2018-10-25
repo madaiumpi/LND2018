@@ -1,56 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
-    <script type="text/javascript" src="js/javaScript.js"></script>
+    <title>A8. Estilos básicos</title>
+    <script>
+        window.onload = function() {
+    var files = document.querySelectorAll("input[type=file]");
+    files[0].addEventListener("change", function(e) {
+        if(this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+}
+</script>
+<link type="text/css" rel="stylesheet" href="../styles/2.css">
 </head>
 
 <body>
 
-    <h1>Introduce tus datos.</h1>
+    <h1>Por favor, introduce tus datos.</h1>
+    
     <form>
-        <fieldset>
-            <legend>Tu cara</legend>
-            <label for="foto">Foto: </label><input type="file" required> <br>
-            <label for="imagen">Previsualización de imagen: <img src="" id="preview"></label>
-        </fieldset>
+        <div>
+            <fieldset id="cara">
 
-        <fieldset>
-            <legend>Datos generales </legend>
-            <label for="nombre">Nombre: </label><input type="text" placeholder="Nombre completo" required>
-            <br />
-            <label for="genero">Género: </label>
-            <input type="radio" name="sexo" value="hombre" required> Hombre
-            <input type="radio" name="sexo" value="mujer"> Mujer <br />
-            <label for="edad">Edad:</label> <input type="number" name="edad" max="100" min="18">
-            <br />
-            <label for="fecha">Fecha de nacimiento: </label> <input type="date"><br />
-            <label for="color">Color favorito: </label><input type="color"> <br />
-            <label for="pais">País: </label>
-            <select name="pais">
-                <option value="canada">Canadá</option>
-                <option value="España">España</option>
-                <option value="España">Francia</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Otras Características</legend>
-            <label for="altura">Altura:</label> <span class="red">Bajo</span><input type="range" min="1" max="20"><span class="lila">Alto</span> <br />
-            <label for="salario">Salario:</label> <span class="red">Pobre</span><input type="range" min="1" max="10"><span class="lila">Rico</span>
-        </fieldset>
-        <fieldset>
-            <legend>Información de Contacto</legend>
-            <label for="email">Email:</label> <input type="email" required> <br />
-            <label for="movil">Móvil:</label> <input type="text"> <br />
-            <label for="direccion">Dirección:</label><textarea rows="3" cols="39"></textarea><br />
-            <label for="contacto">Método de contacto:</label> <input type="checkbox">Email
-            <input type="checkbox">Whatsapp
-            <input type="checkbox">Skype
-        </fieldset>
+                <legend>Tu cara</legend>
+
+                <label for="foto">Foto:</label>
+                <input type="file" value="Seleccionar archivo" id="foto" required><br />
+                
+                <label for="preview">Previsualización de imagen:</label>
+                <img id="preview" alt="Tu imagen">
+                
+                <label></label>
+
+
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+            
+                <legend>Datos Generales</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre completo" required><br />
+                
+                <label for="hombre">Género:</label>
+                <input type="radio" name="genero" value="Hombre" id="hombre">Hombre
+                <input type="radio" name="genero" value="Mujer">Mujer<br>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" id="edad"><br>
+                
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" name="fecha" id="fecha"><br>
+                
+                <label for="color">Color favorito:</label>
+                <input type="color" name="color" id="color"><br>
+                
+                <label for="pais">País:</label>
+                <select name="pais" id="pais">
+                
+                    <option value="españa">España</option>
+                    <option value="venezuela">Venezuela</option>
+                    <option value="corea">Corea del Norte</option>
+                    
+                </select>
+            
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Otras características</legend>
+                
+                <label for="altura">Altura:</label>
+                <span class="rojo">Bajo</span><input type="range" name="altura" id="altura" min="100" max="200"><span class="azul">Alto</span><br>
+                
+                <label for="salario">Salario:</label>
+                <span class="rojo">Pobre</span><input type="range" name="salario" id="salario" min="600" max="80000"><span class="azul">Rico</span><br>
+            
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+            
+                <legend>Información de contacto</legend>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="name" required><br>
+                
+                <label for="movil">Móvil:</label>
+                <input type="tel" name="movil" id="movil"><br>
+                
+                <label for="direccion">Dirección:</label>
+                <textarea></textarea><br>
+                
+                <label for="contacto">Método de contacto:</label>
+                <input type="checkbox" name="contacto" id="contacto" value="email">Email
+                <input type="checkbox" name="contacto" value="whatsapp">Whatsapp
+                <input type="checkbox" name="contacto"  value="skype">Skype
+            
+            </fieldset>
+        </div>
         <input type="submit" value="Enviar" id="enviar">
     </form>
 </body>
-
 </html>
