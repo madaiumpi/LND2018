@@ -1,29 +1,26 @@
 fieldset {
-    border-color: yellow;
-    background-color: yellow;
-    border-width: 9px;
-    border-style: solid;
-    margin: 14px;
-    width: 600px;
+    background-color: #FAFFDC;
+    border: 8px solid yellow;
+    margin-bottom: 10px;
 }
 
-fieldset label {
-    width: 20%;
-    float: left;
+#cara {
+    
+    margin-bottom: 30px;
 }
-
-.red {
-    background-color: red;
+input {
+  padding: .2em;
 }
-
-.lila {
-    background-color: darkorchid;
+div {
+  margin: .4em 0;
 }
-
-label:hover {
-    font-size: 30px;
+label {
+  width: 10%;
+  float: left;
 }
-
-#enviar {
-    margin: 10px;
+.rojo {
+    background: red;
+}
+.azul {
+    background: #7000FF;
 }
