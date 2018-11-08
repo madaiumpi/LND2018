@@ -1,0 +1,19 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.5em;
+    font-size: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+.Columna {
+    text-align: right;
+    font-style: italic;
+}
+#Destinatario {
+    font-style: italic;
+}
+.Nombre {
+    font-weight: bold;
+}
