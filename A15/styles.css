@@ -1,0 +1,69 @@
+.Columna {
+    float: left;
+    width: 33.33%;
+}
+
+article {
+    margin: 10px;
+    border: 1.5px solid black;
+    background-color: white;
+    padding-right: 12px;
+    position
+}
+
+.Fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    width: 50%;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 0;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    background-color: lightblue;
+}
+
+h3 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+
+}
+
+p {
+    padding-left: 10px
+}
+
+@media screen and (max-width: 600px) {
+    .Columna {
+        width: 100%;
+    }
+
+    main {
+        height: auto;
+    }
+
+}
+header {
+    text-align: center;
+    background-color: darkgrey;
+    padding: 10px;
+}
+
+main {
+    background-color: lightblue;
+    height: 580px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+footer {
+    padding-top: 10px;
+    background-color: darkgrey;
+}
