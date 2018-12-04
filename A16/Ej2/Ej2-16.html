@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>A16</title>
+	<link href="Ej2-16CSS.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>Food, LLC</h1>
+		<nav class="navtop" id="myTopnav">
+			<ul>
+				<li><a class="active">Home</a></li>
+				<li><a>Contact</a></li>
+				<li><a>Legal Stuff</a></li>
+				<li class="icon"><a href="javascript:void(0);" onclick="myFunction()">
+						<i class="fa fa-bars"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1 id="menutitle">Our Menu</h1>
+		<div class="row">
+
+			<div class="columna">
+				<article>
+					<h2>Chicken</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit eleifend dignissim sollicitudin, dictum eget pharetra gravida aptent turpis senectus etiam feugiat fermentum, hac taciti ad auctor parturient erat viverra laoreet mollis. Nibh nec dapibus maecenas faucibus libero id iaculis, mi tortor tristique porttitor commodo vivamus, enim sodales quisque ullamcorper etiam eleifend. Mus odio sapien tempor netus fames etiam mollis fringilla felis, quisque lacus in primis iaculis id cum ligula gravida hendrerit, integer suspendisse pharetra proin nec dis non augue.</p>
+				</article>
+			</div>
+
+			<div class="columna">
+				<article>
+					<h2>Beef</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit eleifend dignissim sollicitudin, dictum eget pharetra gravida aptent turpis senectus etiam feugiat fermentum, hac taciti ad auctor parturient erat viverra laoreet mollis. Nibh nec dapibus maecenas faucibus libero id iaculis, mi tortor tristique porttitor commodo vivamus, enim sodales quisque ullamcorper etiam eleifend. Mus odio sapien tempor netus fames etiam mollis fringilla felis, quisque lacus in primis iaculis id cum ligula gravida hendrerit, integer suspendisse pharetra proin nec dis non augue.</p>
+				</article>
+			</div>
+
+			<div class="columna">
+				<article>
+					<h2>Sushi</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit eleifend dignissim sollicitudin, dictum eget pharetra gravida aptent turpis senectus etiam feugiat fermentum, hac taciti ad auctor parturient erat viverra laoreet mollis. Nibh nec dapibus maecenas faucibus libero id iaculis, mi tortor tristique porttitor commodo vivamus, enim sodales quisque ullamcorper etiam eleifend. Mus odio sapien tempor netus fames etiam mollis fringilla felis, quisque lacus in primis iaculis id cum ligula gravida hendrerit, integer suspendisse pharetra proin nec dis non augue.</p>
+				</article>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+
+		<h3>Footer</h3>
+
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "navtop") {
+				x.className += " responsive";
+			} else {
+				x.className = "navtop";
+			}
+		}
+	</script>
+</body>
+
+</html>

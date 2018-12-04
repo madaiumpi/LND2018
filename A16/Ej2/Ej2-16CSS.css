@@ -1,0 +1,166 @@
+header {
+	text-align: left;
+	background-color: orangered;
+	padding: 10px;
+}
+
+main {
+	background-color: #f4f4f4;
+	height: 580px;
+	margin: 0px , 0px;
+	position: relative;
+}
+
+footer {
+	display: flex;
+	align-items: flex-end;
+	padding-top: 10px;
+	background-color: orangered;
+}
+
+.row  {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-content: space-around;
+	background: #f4f4f4;
+}
+
+.columna {
+	flex-grow: 1;
+	width: 400px;
+	flex-wrap: wrap;
+}
+
+article {
+	margin: 10px;
+	border: 1px solid black;
+	background-color: white;
+	padding-right: 12px;
+}
+
+#menutitle {
+	text-align: center;
+	background-color: #f4f4f4
+}
+
+h2 {
+	width: 50%;
+	text-align: center;
+	margin-left: 50%;
+	margin-top: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 12px;
+	background-color: grey;
+}
+
+h3 {
+	padding: 10px;
+	margin: 0;
+	text-align: center;
+	
+}
+
+p {
+	padding-left: 10px
+
+}
+
+.navtop {
+	display: flex;
+	background-color: #333;
+	align-items: center;
+	overflow: hidden;
+}
+
+ul {
+	display: flex;
+	padding: 0px;
+}
+
+li {
+	flex-direction: row;
+	list-style: none;
+	margin: 0px;
+	padding: 0;
+}
+
+.active {
+  background-color: grey;
+  color: black;
+}
+
+a {
+	
+	text-decoration: none;
+	padding: 17px 10px;
+	margin: 0px;
+	color: white;
+	align-content: center;
+}
+
+.navtop a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navtop .icon {
+    display: none;
+	padding: 0px;
+	
+}
+
+
+@media screen and (max-width: 767px){
+	.row  {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	main {
+		height: 580px;
+	}
+	.navtop li:not(:first-child){
+		display:none
+	}
+	.navtop li.icon {
+    	display: block;
+		margin: 0;
+		padding: 0;
+  	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+  .navtop.responsive {position: relative;}
+  .navtop.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navtop.responsive li {
+	float: none;
+    display: flex;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 991px){
+		.row  {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		}
+		
+		.columna:nth-of-type(3) {
+			flex-grow: 2;
+		}
+		
+		main {
+			height: 600px;
+		}
+}
