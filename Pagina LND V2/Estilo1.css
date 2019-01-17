@@ -1,0 +1,186 @@
+ html {
+     font-family: 'Times New Roman', serif;
+     background: url(Recursos/background.jpg);
+ }
+
+ h1 {
+     color: white;
+     text-align: center;
+ }
+
+ h2 {
+     color: white;
+     text-align: center;
+ }
+
+ p {
+     color: white;
+     font-size: 18px;
+     text-align: center;
+     width: 100%;
+     max-width: 900px;
+     margin: auto;
+ }
+
+ #Foto {
+     width: 11%;
+     position: absolute;
+     left: 35px;
+     top: 80px;
+ }
+
+ #Foto1 {
+     width: 11%;
+     position: absolute;
+     right: 35px;
+     top: 80px;
+ }
+
+
+
+ div img {
+     position: absolute;
+     right: 35px;
+     top: 60px;
+ }
+
+ body {
+     margin: 0;
+     font-family: sans-serif;
+ }
+
+  header {
+     width: 100%;
+     background: #4E94AB;
+     position: fixed;
+     height: 45px;
+     z-index: 100; 
+ }
+
+ main {
+     padding: 40px;
+     padding-bottom: 10px;
+ }
+
+ /* Barra de navegación */
+
+ #boton {
+     display: none;
+     justify-content: flex-start;
+ }
+
+ header label {
+     display: none;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     border-right: 0px solid #fff;
+ }
+
+ header laber:hover {
+     cursor: pointer;
+     background: rgba(0, 0, 0, 0.3);
+ }
+
+
+ .menu ul {
+     margin: 0px;
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+ }
+
+ .menu li {
+     border-right: 0px solid #fff;
+ }
+
+ .menu li:hover {
+     background: rgba(0, 0, 0, 0.3);
+ }
+
+ .menu li a {
+     display: block;
+     padding: 15px 20px;
+     color: #fff;
+     text-decoration: none;
+
+ }
+
+ @media (max-width:1000px) {
+     header label {
+         display: block;
+     }
+
+     .menu {
+         position: absolute;
+         background: #4E94AB;
+         width: 20%;
+         margin-left: -70%;
+         transition: all 0.5s;
+     }
+
+     .menu ul {
+         flex-direction: column;
+     }
+
+     .menu li {
+         border-top: 0px solid #fff;
+     }
+
+     #boton:checked ~ .menu {
+         margin: 0;
+     }
+ }
+
+ /* Formulario */
+ .registro {
+     width: 100%;
+     max-width: 550px;
+     margin: auto;
+     border-radius: 10px;
+ }
+
+ .Titulo {
+     background: ;
+     color: white;
+     padding: 10px;
+     text-align: center;
+     font-weight: 100px;
+     font-size: 25px;
+     border-top-right-radius: 7px;
+     border-top-left-radius: 7px;
+ }
+
+ .Rellenar {
+     padding: 5px 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ input {
+     margin-bottom: 15px;
+     padding: 15px;
+     font-size: 16px;
+     border-radius: 3px;
+     border: 2px solid darkgrey;
+ }
+
+ .input-1 {
+     width: 100%;
+ }
+
+ .input-2 {
+     width: 75%;
+ }
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Firma {
+    font-size: 20px;
+}
